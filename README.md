@@ -49,6 +49,6 @@ Running flask API program:
 (python3.6)$ python myapp.py
 ```
 
-Now, that HTTP server is up on your computer, access in localhost:5000 (default) with web browser.
+Now, that HTTP server is up on your computer, access in localhost:5000/p5draw (default) with web browser.
 
 Draw and send!
