@@ -51,4 +51,4 @@ Running flask API program:
 
 Now, that HTTP server is up on your computer, please access in localhost:5000/p5draw (default) with web browser.
 
-Draw and send!
+Let's draw and send!
