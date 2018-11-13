@@ -1,0 +1,6 @@
+#!bin/bash
+
+git add ./*
+git commit -m "latest version"
+git pull origin master
+git push origin master
