@@ -1,7 +1,5 @@
 # Import packages
-from flask import Flask, render_template, request, jsonify
-import base64
-import json
+from flask import Flask, render_template, request
 
 # Import functions
 from img_process import preprocess
