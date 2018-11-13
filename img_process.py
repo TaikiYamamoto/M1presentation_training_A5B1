@@ -18,6 +18,7 @@ def preprocess(jpgtxt):
     # Save acquired image to "./Images/" dirtectry
     name = sft("%Y%m%d%H%M%S") # Get string of the local time (Exp: 201811010932)
     directry = SAVE_PATH
+    # If "./Images" directory is not exist, making it. 
     if os.path.lexists(directry) is False:
         os.makedirs(directry)
     f = open("{}/image_{}.jpg".format(SAVE_PATH, name),'wb')       # Open file object
