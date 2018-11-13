@@ -34,8 +34,9 @@ This Completed installation.
 
 Running flask API program:
 ```sh
-(~_env)$ python myapp.py
+(python3.6)$ python myapp.py
 ```
 
-Now, that HTTP server is up on your computer, access in 0.0.0.0:5000 (default) with web browser.
+Now, that HTTP server is up on your computer, access in localhost:5000 (default) with web browser.
 
+Draw and send!

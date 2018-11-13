@@ -1,8 +1,11 @@
 # Import packages
 import base64
 import numpy as np
+import os
 from PIL import Image
 from time import strftime as sft
+
+SAVE_PATH = './Images'
 
 # Preprocessing function
 # Input: JPEG URI image
@@ -14,12 +17,15 @@ def preprocess(jpgtxt):
 
     # Save acquired image to "./Images/" dirtectry
     name = sft("%Y%m%d%H%M%S") # Get string of the local time (Exp: 201811010932)
-    f = open("./Images/image_{}.jpg".format(name),'wb')       # Open file object
+    directry = SAVE_PATH
+    if os.path.lexists(directry) is False:
+        os.makedirs(directry)
+    f = open("{}/image_{}.jpg".format(SAVE_PATH, name),'wb')       # Open file object
     f.write(data)              # Write image data to file
     f.close()                  # Close file object
 
     # Convert to a form suitable for input
-    img = Image.open("./Images/image_{}.jpg".format(name))
+    img = Image.open("{}/image_{}.jpg".format(SAVE_PATH, name))
     img = img.convert('L')     # Convert to glay scale
     img = img.resize((28,28))  # Resize
     img_array = np.array(img)  # Now we have image data in numpy
