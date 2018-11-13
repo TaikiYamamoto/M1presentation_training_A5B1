@@ -62,7 +62,7 @@ function send_img(){
     // Send post data to '/demotext' with json
     httpPost(url, 'json', postData,
 	     function(result){
-		 tt.innerHTML = ('answer is:' + result);
+		 display.innerHTML = ('answer is:' + result);
 	     }
 	    );
 }

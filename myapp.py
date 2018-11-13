@@ -31,5 +31,5 @@ def demotext():
 
 if __name__ == '__main__':
     # Run this API
-    # After running, please access '0.0.0.0:5000' with Web Browser.
+    # After running, please access 'localhost:5000/p5draw' with Web Browser.
     app.run(host = '0.0.0.0', port = 5000, threaded = True, debug = True)
