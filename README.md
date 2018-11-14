@@ -3,7 +3,7 @@ This propgram is a simple web API using flask. We aim for collecting data by thi
 
 # Installation Guide
 
-This program works with Python3.6.
+This program works with Python3.5.
 
 First, please clone this repository and  get Miniconda3 installer with command below:
 
@@ -35,8 +35,8 @@ $ source ~/.bashrc
 Finally, construct the environment using environment.yml, and activate its environment:
 
 ```sh
-$ conda env create -n python3.6 -f environment.yml
-$ source activate python3.6
+$ conda env create -n python3.5 -f environment.yml
+$ source activate python3.5
 ```
 
 This Completed installation.
@@ -46,7 +46,7 @@ This Completed installation.
 Running flask API program:
 
 ```sh
-(python3.6)$ python myapp.py
+(python3.5)$ python myapp.py
 ```
 
 Now, that HTTP server is up on your computer, please access in localhost:5000/p5draw (default) with web browser.
