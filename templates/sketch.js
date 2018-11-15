@@ -57,9 +57,9 @@ function send_img(){
 
     // Make json type data
     let postData = {imgURI: dataURL};
-    let url = '/demotext';
+    let url = '/demo_prediction';
 
-    // Send post data to '/demotext' with json
+    // Send post data to '/demo_prediction' with json
     httpPost(url, 'json', postData,
 	     function(result){
 		 display.innerHTML = ('answer is:' + result);
