@@ -49,6 +49,10 @@ Running flask API program:
 (python3.5)$ python myapp.py
 ```
 
-Now, that HTTP server is up on your computer, please access in localhost:5000/p5draw (default) with web browser.
+Now, that HTTP server is up on your computer, please access in localhost:5000/ (default) with web browser.
 
-Let's draw and send!
+However, you can not see your page, because you do not implement server's operating.
+
+Please implement it with reference to handouts and presentations.
+
+If you completed implementation, let's draw and send!
